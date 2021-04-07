@@ -14,7 +14,7 @@ class TradeHistorySchema {
       close_result: { type: Schema.Types.Number, required: true },
       /** 0: win - 1: loss */
       status_result: { type: Schema.Types.Boolean, required: true },
-      amount_result: { type: Schema.Types.Number, required: true, default: 0 },
+      amount_result: { type: Schema.Types.Number, required: true },
       /** 0: lệnh từ hệ thống trade - 1: lệnh được copy từ hệ thống copy trade */
       type: { type: Schema.Types.Number, required: true },
       /** id của lệnh copy */

@@ -51,10 +51,6 @@ export default class UserModel {
     return this._userModel.ref_code;
   }
 
-  get amount(): number {
-    return this._userModel.amount;
-  }
-
   get verify_code(): string {
     return this._userModel.verify_code;
   }

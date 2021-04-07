@@ -20,9 +20,9 @@ export default interface ITradeHistoryModel extends mongoose.Document {
   // amount received
   amount_result: number,
   // 0: lệnh từ hệ thống trade - 1: lệnh được copy từ hệ thống copy trade
-  type: number,
+  type?: number,
   // id của lệnh copy
-  history_parent_id: string,
+  history_parent_id?: string,
   // id user expert
-  expert_id: string,
+  expert_id?: string,
 }
