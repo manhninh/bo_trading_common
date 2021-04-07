@@ -1,4 +1,4 @@
-import IRefeshTokenModel from './IRefeshTokenModel';
+import IRefeshTokenModel from './IRefreshTokenModel';
 
 export default class RefeshTokenModel {
   private _refeshTokenModel: IRefeshTokenModel;

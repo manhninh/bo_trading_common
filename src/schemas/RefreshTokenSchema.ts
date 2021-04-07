@@ -1,4 +1,4 @@
-import IRefeshTokenModel from '@src/models/refeshTokens/IRefeshTokenModel';
+import IRefreshTokenModel from '@src/models/refreshTokens/IRefreshTokenModel';
 import mongoose, { Schema } from 'mongoose';
 
 class RefreshTokenSchema {
@@ -14,4 +14,4 @@ class RefreshTokenSchema {
   }
 }
 
-export default mongoose.model<IRefeshTokenModel>('refresh_tokens', RefreshTokenSchema.schema);
+export default mongoose.model<IRefreshTokenModel>('refresh_tokens', RefreshTokenSchema.schema);
