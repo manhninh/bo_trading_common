@@ -1,2 +1,11 @@
-# bo_trading_common
-BO Trading Common: Schema, Send mail,...
+# BO Trading Common
+
+## Install
+
+```shell
+npm install bo-trading-common
+```
+
+```shell
+yarn add bo-trading-common
+```
