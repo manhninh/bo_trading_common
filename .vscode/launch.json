@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/src/index.ts",
+      "preLaunchTask": "npm: build",
+      "sourceMaps": true,
+      "smartStep": true,
+      "internalConsoleOptions": "openOnSessionStart",
+      "cwd": "${workspaceFolder}",
+      "protocol": "inspector",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "outputCapture": "std",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": "5002",
+        "MONGODB_URI": "mongodb+srv://ninhpm:ninhpm123@cluster0.ofmu5.mongodb.net/bo_trading_new",
+        "TOKEN_LIFE": "3600",
+        "URL_WEB_VERIFICATION_EMAIL": "http://localhost:3000/verification/email/",
+        "NODEMAILER_HOST": "smtp.ethereal.email",
+        "NODEMAILER_PORT": "587",
+        "NODEMAILER_SECURE": "0",
+        "NODEMAILER_USER": "dayana.connelly@ethereal.email",
+        "NODEMAILER_PASS": "EYg9bv9WDCQkKT9BtF",
+        "EMAIL_ROOT": "IOGOETH ninh.phammanh@powergatesoftware.com",
+        "PATH_TEMPLATE_EMAIL": "D:\\Freelancer\\BOTrading\\bo_trading_api\\email_template"
+      }
+    }
+  ]
+}
