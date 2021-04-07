@@ -1,5 +1,5 @@
-import IOrderModel from '@src/models/orders/IOrderModel';
 import mongoose, { Schema } from 'mongoose';
+import IOrderModel from '../models/orders/IOrderModel';
 
 class OrderSchema {
   static get schema() {

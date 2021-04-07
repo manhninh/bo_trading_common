@@ -1,5 +1,5 @@
-import ITradeHistoryModel from '@src/models/tradeHistories/ITradeHistoryModel';
 import mongoose, { Schema } from 'mongoose';
+import ITradeHistoryModel from '../models/tradeHistories/ITradeHistoryModel';
 
 class TradeHistorySchema {
   static get schema() {

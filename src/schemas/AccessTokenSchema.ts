@@ -1,5 +1,5 @@
-import IAccessTokenModel from '@src/models/accessTokens/IAccessTokenModel';
 import mongoose, { Schema } from 'mongoose';
+import IAccessTokenModel from '../models/accessTokens/IAccessTokenModel';
 
 class AccessTokenSchema {
   static get schema() {

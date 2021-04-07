@@ -1,5 +1,5 @@
-import IRefreshTokenModel from '@src/models/refreshTokens/IRefreshTokenModel';
 import mongoose, { Schema } from 'mongoose';
+import IRefreshTokenModel from '../models/refreshTokens/IRefreshTokenModel';
 
 class RefreshTokenSchema {
   static get schema() {

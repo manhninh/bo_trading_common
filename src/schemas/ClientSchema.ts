@@ -1,5 +1,5 @@
-import IClientModel from '@src/models/clients/IClientModel';
 import mongoose, { Schema } from 'mongoose';
+import IClientModel from '../models/clients/IClientModel';
 
 class ClientSchema {
   static get schema() {
