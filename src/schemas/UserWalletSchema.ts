@@ -9,7 +9,9 @@ class UserWalletSchema {
         amount_trade: { type: Schema.Types.Number, required: true, default: 0 },
         amount_demo: { type: Schema.Types.Number, required: true, default: 10000 },
         amount_expert: { type: Schema.Types.Number, default: 0 },
-        amount_copytrade: { type: Schema.Types.Number, default: 0 }
+        amount_copytrade: { type: Schema.Types.Number, default: 0 },
+        trc20: { type: Schema.Types.String, default: null },
+        erc20: { type: Schema.Types.String, default: null }
       },
       {
         timestamps: true,
