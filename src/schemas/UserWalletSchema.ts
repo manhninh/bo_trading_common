@@ -8,8 +8,8 @@ class UserWalletSchema {
         user_id: { type: Schema.Types.ObjectId, required: true },
         amount_trade: { type: Schema.Types.Number, required: true, default: 0 },
         amount_demo: { type: Schema.Types.Number, required: true, default: 10000 },
-        amount_expert: { type: Schema.Types.Number, default: 0 },
-        amount_copytrade: { type: Schema.Types.Number, default: 0 },
+        amount_expert: { type: Schema.Types.Number },
+        amount_copytrade: { type: Schema.Types.Number },
         trc20: { type: Schema.Types.Mixed, default: null },
         erc20: { type: Schema.Types.Mixed, default: null }
       },

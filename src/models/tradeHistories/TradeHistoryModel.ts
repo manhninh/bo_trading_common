@@ -7,6 +7,10 @@ export default class TradeHistoryModel {
     this._tradeHistoryModel = TradeHistoryModel;
   }
 
+  get order_uuid(): string {
+    return this._tradeHistoryModel.order_uuid;
+  }
+
   get user_id(): string {
     return this._tradeHistoryModel.user_id;
   }
@@ -45,10 +49,6 @@ export default class TradeHistoryModel {
 
   get type(): number {
     return this._tradeHistoryModel.type;
-  }
-
-  get history_parent_id(): string {
-    return this._tradeHistoryModel.history_parent_id;
   }
 
   get expert_id(): string {
