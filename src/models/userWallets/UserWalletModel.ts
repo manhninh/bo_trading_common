@@ -27,11 +27,11 @@ export default class UserWalletModel {
     return this._userWalletModel.amount_copytrade;
   }
 
-  get trc20(): object {
+  get trc20(): string {
     return this._userWalletModel.trc20;
   }
 
-  get erc20(): object {
+  get erc20(): string {
     return this._userWalletModel.erc20;
   }
 }

@@ -6,6 +6,6 @@ export default interface IUserWalletModel extends mongoose.Document {
   amount_demo: number;
   amount_expert?: number;
   amount_copytrade?: number;
-  trc20?: object;
-  erc20?: object;
+  trc20?: string;
+  erc20?: string;
 }
