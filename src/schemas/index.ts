@@ -5,6 +5,7 @@ import OrderSchema from "./OrderSchema";
 import RefreshTokenSchema from "./RefreshTokenSchema";
 import TradeHistorySchema from "./TradeHistorySchema";
 import UserSchema from "./UserSchema";
+import UserTransactionsSchema from "./UserTransactionsSchema";
 import UserWalletSchema from "./UserWalletSchema";
 
 export {
@@ -15,6 +16,7 @@ export {
   UserSchema,
   UserWalletSchema,
   OrderSchema,
-  TradeHistorySchema
+  TradeHistorySchema,
+  UserTransactionsSchema
 };
 
