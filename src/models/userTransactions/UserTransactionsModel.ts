@@ -42,4 +42,8 @@ export default class UserTransactionsModel {
   get noted(): string {
     return this._userTransactionsModel.noted;
   }
+
+  get fee(): number {
+    return this._userTransactionsModel.fee;
+  }
 }

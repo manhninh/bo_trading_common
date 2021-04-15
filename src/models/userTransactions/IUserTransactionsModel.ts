@@ -4,6 +4,7 @@ export default interface IUserTransactionsModel extends mongoose.Document {
   user_id: string;
   to_user_id: string; // Setup if transaction if transfer from A to B
   amount: number;
+  fee: number;
   symbol: string;
   address: string;
   tx: string;
