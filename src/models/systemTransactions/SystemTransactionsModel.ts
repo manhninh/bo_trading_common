@@ -7,6 +7,10 @@ export default class SystemTransactionsModel {
     this._systemTransactionsModel = SystemTransactionsModel;
   }
 
+  get user_id(): string {
+    return this._systemTransactionsModel.user_id;
+  }
+
   get amount(): number {
     return this._systemTransactionsModel.amount;
   }
@@ -29,5 +33,9 @@ export default class SystemTransactionsModel {
 
   get noted(): string {
     return this._systemTransactionsModel.noted;
+  }
+
+  get response(): object {
+    return this._systemTransactionsModel.response;
   }
 }

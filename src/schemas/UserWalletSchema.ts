@@ -6,6 +6,7 @@ class UserWalletSchema {
     const schema = new mongoose.Schema(
       {
         user_id: { type: Schema.Types.ObjectId, required: true },
+        amount: { type: Schema.Types.Number, required: true, default: 0 },
         amount_trade: { type: Schema.Types.Number, required: true, default: 0 },
         amount_demo: { type: Schema.Types.Number, required: true, default: 10000 },
         amount_expert: { type: Schema.Types.Number, default: 0 },

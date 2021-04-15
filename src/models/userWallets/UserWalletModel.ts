@@ -11,6 +11,10 @@ export default class UserWalletModel {
     return this._userWalletModel.user_id;
   }
 
+  get amount(): number {
+    return this._userWalletModel.amount;
+  }
+
   get amount_trade(): number {
     return this._userWalletModel.amount_trade;
   }
