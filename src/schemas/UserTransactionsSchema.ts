@@ -1,7 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
 import IUserTransactionsModel from '../models/userTransactions/IUserTransactionsModel';
 import Constants from '../utils/Constants';
-const mongoosePaginate = require('mongoose-paginate-v2');
 
 class UserTransactionsSchema {
   static get schema() {
@@ -24,6 +23,7 @@ class UserTransactionsSchema {
     );
 
     //
+    var mongoosePaginate = require('mongoose-paginate');
     schema.plugin(mongoosePaginate);
     return schema;
   }
