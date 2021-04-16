@@ -12,7 +12,8 @@ class UserWalletSchema {
         amount_expert: { type: Schema.Types.Number, default: 0 },
         amount_copytrade: { type: Schema.Types.Number, default: 0 },
         trc20: { type: Schema.Types.String, default: null },
-        erc20: { type: Schema.Types.String, default: null }
+        erc20: { type: Schema.Types.String, default: null },
+        enable_withdraw: { type: Schema.Types.Boolean, default: true }
       },
       {
         timestamps: true,

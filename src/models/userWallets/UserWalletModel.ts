@@ -38,4 +38,8 @@ export default class UserWalletModel {
   get erc20(): string {
     return this._userWalletModel.erc20;
   }
+
+  get enable_withdraw(): boolean {
+    return this._userWalletModel.enable_withdraw;
+  }
 }
