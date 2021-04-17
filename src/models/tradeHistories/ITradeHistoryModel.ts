@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
 
 export default interface ITradeHistoryModel extends mongoose.Document {
+  // uuid order
+  order_uuid?: string,
   // user id ref from table users
   user_id: string;
   // the opening price of the entry candle
@@ -21,8 +23,6 @@ export default interface ITradeHistoryModel extends mongoose.Document {
   amount_result: number,
   // 0: lệnh từ hệ thống trade - 1: lệnh được copy từ hệ thống copy trade
   type?: number,
-  // id của lệnh copy
-  history_parent_id?: string,
   // id user expert
   expert_id?: string,
 }
