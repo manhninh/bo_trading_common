@@ -1,5 +1,5 @@
 import mongoose, {Schema} from 'mongoose';
-import IOrderLogModel from '../models/orders/IOrderLogModel';
+import IOrderLogModel from '../models/orderLogs/IOrderLogModel';
 
 class OrderLogSchema {
   static get schema() {
