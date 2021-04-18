@@ -15,14 +15,6 @@ export default class OrderModelModel {
     return this._orderModelModel.user_id;
   }
 
-  get open_order(): number {
-    return this._orderModelModel.open_order;
-  }
-
-  get close_order(): number {
-    return this._orderModelModel.close_order;
-  }
-
   get status_order(): boolean {
     return this._orderModelModel.status_order;
   }
