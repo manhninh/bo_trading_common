@@ -1,7 +1,7 @@
 import mongoose, {Schema} from 'mongoose';
-import IOrderLogModel from '../models/orderLogs/IOrderLogModel';
+import IQueueLogModel from '../models/queueLogs/IQueueLogModel';
 
-class OrderLogSchema {
+class QueueLogSchema {
   static get schema() {
     const schema = new mongoose.Schema(
       {
@@ -15,4 +15,4 @@ class OrderLogSchema {
   }
 }
 
-export default mongoose.model<IOrderLogModel>('order_logs', OrderLogSchema.schema);
+export default mongoose.model<IQueueLogModel>('queue_logs', QueueLogSchema.schema);

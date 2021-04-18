@@ -1,8 +1,8 @@
 import AccessTokenSchema from './AccessTokenSchema';
 import BlockSchema from './BlockSchema';
 import ClientSchema from './ClientSchema';
-import OrderLogSchema from './OrderLogSchema';
 import OrderSchema from './OrderSchema';
+import QueueLogSchema from './QueueLogSchema';
 import RefreshTokenSchema from './RefreshTokenSchema';
 import SystemConfigSchema from './SystemConfigSchema';
 import SystemTransactionsSchema from './SystemTransactionsSchema';
@@ -23,5 +23,5 @@ export {
   UserTransactionsSchema,
   SystemTransactionsSchema,
   SystemConfigSchema,
-  OrderLogSchema,
+  QueueLogSchema,
 };
