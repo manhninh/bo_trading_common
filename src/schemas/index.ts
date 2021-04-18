@@ -1,14 +1,15 @@
-import AccessTokenSchema from "./AccessTokenSchema";
-import BlockSchema from "./BlockSchema";
-import ClientSchema from "./ClientSchema";
-import OrderSchema from "./OrderSchema";
-import RefreshTokenSchema from "./RefreshTokenSchema";
-import SystemConfigSchema from "./SystemConfigSchema";
-import SystemTransactionsSchema from "./SystemTransactionsSchema";
-import TradeHistorySchema from "./TradeHistorySchema";
-import UserSchema from "./UserSchema";
-import UserTransactionsSchema from "./UserTransactionsSchema";
-import UserWalletSchema from "./UserWalletSchema";
+import AccessTokenSchema from './AccessTokenSchema';
+import BlockSchema from './BlockSchema';
+import ClientSchema from './ClientSchema';
+import OrderLogSchema from './OrderLogSchema';
+import OrderSchema from './OrderSchema';
+import RefreshTokenSchema from './RefreshTokenSchema';
+import SystemConfigSchema from './SystemConfigSchema';
+import SystemTransactionsSchema from './SystemTransactionsSchema';
+import TradeHistorySchema from './TradeHistorySchema';
+import UserSchema from './UserSchema';
+import UserTransactionsSchema from './UserTransactionsSchema';
+import UserWalletSchema from './UserWalletSchema';
 
 export {
   AccessTokenSchema,
@@ -21,6 +22,6 @@ export {
   TradeHistorySchema,
   UserTransactionsSchema,
   SystemTransactionsSchema,
-  SystemConfigSchema
+  SystemConfigSchema,
+  OrderLogSchema,
 };
-
