@@ -23,8 +23,8 @@ export default class OrderModelModel {
     return this._orderModelModel.amount_order;
   }
 
-  get is_expert(): boolean {
-    return this._orderModelModel.is_expert;
+  get type_user(): number {
+    return this._orderModelModel.type_user;
   }
 
   get status(): boolean {

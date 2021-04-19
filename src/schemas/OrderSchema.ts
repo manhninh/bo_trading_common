@@ -10,8 +10,8 @@ class OrderSchema {
         /** 0: buy - 1: sell */
         status_order: {type: Schema.Types.Boolean, required: true},
         amount_order: {type: Schema.Types.Number, required: true},
-        /** chuyên gia đi lệnh từ hệ thống copy trade */
-        is_expert: {type: Schema.Types.Boolean},
+        // 0: Real - 1: Demo - 2: Expert - 3: User Copy
+        type_user: {type: Schema.Types.Number},
         /** 0: inprocess - 1: done */
         status: {type: Schema.Types.Boolean, required: true},
       },

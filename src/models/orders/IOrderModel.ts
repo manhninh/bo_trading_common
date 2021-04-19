@@ -9,8 +9,8 @@ export default interface IOrderModel extends mongoose.Document {
   status_order: boolean;
   // số tiền vào lệnh
   amount_order: number;
-  /** có phải lệnh của chuyên gia đi lệnh từ hệ thống copy trade */
-  is_expert?: boolean;
+  // 0: Real - 1: Demo - 2: Expert - 3: User Copy
+  type_user?: number;
   /** trạng thái lệnh đang chờ kết quả hay đã hoàn thành - 0: inprocess - 1: done */
   status: boolean;
 }
