@@ -1,28 +1,26 @@
-import mongoose, { Schema } from 'mongoose';
+import mongoose, {Schema} from 'mongoose';
 import ITradeHistoryModel from '../models/tradeHistories/ITradeHistoryModel';
 
 class TradeHistorySchema {
   static get schema() {
-    const schema = new mongoose.Schema({
-      /** uuid order */
-      order_uuid: { type: Schema.Types.String, required: true },
-      user_id: { type: Schema.Types.ObjectId, required: true },
-      open_order: { type: Schema.Types.Number, required: true },
-      close_order: { type: Schema.Types.Number, required: true },
-      /** 0: buy - 1: sell */
-      status_order: { type: Schema.Types.Boolean, required: true },
-      amount_order: { type: Schema.Types.Number, required: true },
-      open_result: { type: Schema.Types.Number, required: true },
-      close_result: { type: Schema.Types.Number, required: true },
-      /** 0: win - 1: loss */
-      status_result: { type: Schema.Types.Boolean, required: true },
-      amount_result: { type: Schema.Types.Number, required: true },
-      /** 0: lệnh từ hệ thống trade - 1: lệnh được copy từ hệ thống copy trade */
-      type: { type: Schema.Types.Number, required: true },
-      expert_id: { type: Schema.Types.ObjectId },
-    }, {
-      timestamps: true
-    });
+    const schema = new mongoose.Schema(
+      {
+        /** uuid order */
+        order_uuid: {type: Schema.Types.String, required: true},
+        user_id: {type: Schema.Types.ObjectId, required: true},
+        buy_amount_order: {type: Schema.Types.Number, required: true, default: 0},
+        sell_amount_order: {type: Schema.Types.Number, required: true, default: 0},
+        open_result: {type: Schema.Types.Number, required: true},
+        close_result: {type: Schema.Types.Number, required: true},
+        amount_result: {type: Schema.Types.Number, required: true, default: 0},
+        /** 0: lệnh từ hệ thống trade - 1: Lệnh từ hệ thống demo - 2: lệnh được copy từ hệ thống copy trade */
+        type: {type: Schema.Types.Number, required: true},
+        expert_id: {type: Schema.Types.ObjectId},
+      },
+      {
+        timestamps: true,
+      },
+    );
     return schema;
   }
 }

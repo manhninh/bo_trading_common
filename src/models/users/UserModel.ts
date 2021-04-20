@@ -39,12 +39,8 @@ export default class UserModel {
     return this._userModel.user_parent_id;
   }
 
-  get tfa_salt(): string {
-    return this._userModel.tfa_salt;
-  }
-
-  get tfa_hashed(): string {
-    return this._userModel.tfa_hashed;
+  get tfa(): string {
+    return this._userModel.tfa;
   }
 
   get commission_level(): string[] {

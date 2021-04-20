@@ -15,20 +15,12 @@ export default class TradeHistoryModel {
     return this._tradeHistoryModel.user_id;
   }
 
-  get open_order(): number {
-    return this._tradeHistoryModel.open_order;
+  get buy_amount_order(): number {
+    return this._tradeHistoryModel.buy_amount_order;
   }
 
-  get close_order(): number {
-    return this._tradeHistoryModel.close_order;
-  }
-
-  get status_order(): boolean {
-    return this._tradeHistoryModel.status_order;
-  }
-
-  get amount_order(): number {
-    return this._tradeHistoryModel.amount_order;
+  get sell_amount_order(): number {
+    return this._tradeHistoryModel.sell_amount_order;
   }
 
   get open_result(): number {
@@ -37,10 +29,6 @@ export default class TradeHistoryModel {
 
   get close_result(): number {
     return this._tradeHistoryModel.close_result;
-  }
-
-  get status_result(): boolean {
-    return this._tradeHistoryModel.status_result;
   }
 
   get amount_result(): number {
