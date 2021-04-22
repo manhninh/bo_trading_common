@@ -1,4 +1,5 @@
 import mongoose, {Schema} from 'mongoose';
+import mongoosePaginate from 'mongoose-paginate';
 import ITradeHistoryModel from '../models/tradeHistories/ITradeHistoryModel';
 
 class TradeHistorySchema {
@@ -21,6 +22,8 @@ class TradeHistorySchema {
         timestamps: true,
       },
     );
+
+    schema.plugin(mongoosePaginate);
     return schema;
   }
 }
