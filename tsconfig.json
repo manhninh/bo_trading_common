@@ -13,6 +13,7 @@
     "removeComments": true,
     "watch": true,
     "experimentalDecorators": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "skipLibCheck": true
   }
 }
