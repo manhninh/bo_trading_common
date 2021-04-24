@@ -13,6 +13,7 @@ export default interface IUserModel extends mongoose.Document {
   commission_level?: string[];
   ref_code?: string;
   verify_code?: string;
+  is_sponsor: boolean;
   status: number;
   /** private variable */
   _plain_password: string;
