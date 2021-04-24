@@ -55,6 +55,10 @@ export default class UserModel {
     return this._userModel.verify_code;
   }
 
+  get is_sponsor(): boolean {
+    return this._userModel.is_sponsor;
+  }
+
   get status(): number {
     return this._userModel.status;
   }

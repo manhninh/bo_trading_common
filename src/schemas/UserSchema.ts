@@ -19,6 +19,7 @@ class UserSchema {
         commission_level: {type: Schema.Types.Array},
         ref_code: {type: Schema.Types.String},
         verify_code: {type: Schema.Types.String},
+        is_sponsor: {type: Schema.Types.Boolean, required: true, default: false},
         // 0: Not Active - 1: Active - 2: Block
         status: {type: Schema.Types.Number, required: true, default: 0},
       },
