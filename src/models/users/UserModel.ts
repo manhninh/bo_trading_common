@@ -11,6 +11,10 @@ export default class UserModel {
     return this._userModel.full_name;
   }
 
+  get avatar(): string {
+    return this._userModel.avatar;
+  }
+
   get username(): string {
     return this._userModel.username;
   }

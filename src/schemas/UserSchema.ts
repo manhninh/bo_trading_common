@@ -11,6 +11,7 @@ class UserSchema {
         salt: {type: Schema.Types.String, required: true},
         hashed_password: {type: Schema.Types.String, required: true},
         full_name: {type: Schema.Types.String},
+        avatar: {type: Schema.Types.String},
         phone: {type: Schema.Types.String},
         // 0: Real - 1: Demo - 2: Expert - 3: User Copy
         type_user: {type: Schema.Types.Number, required: true, default: 0},

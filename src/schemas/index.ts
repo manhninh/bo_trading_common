@@ -10,6 +10,8 @@ import TradeHistorySchema from './TradeHistorySchema';
 import UserSchema from './UserSchema';
 import UserTransactionsSchema from './UserTransactionsSchema';
 import UserWalletSchema from './UserWalletSchema';
+import CommissionSchema from './CommissionSchema';
+import CommissionTransactionSchema from './CommissionTransactionSchema';
 
 export {
   AccessTokenSchema,
@@ -24,4 +26,6 @@ export {
   SystemTransactionsSchema,
   SystemConfigSchema,
   QueueLogSchema,
+  CommissionSchema,
+  CommissionTransactionSchema
 };
