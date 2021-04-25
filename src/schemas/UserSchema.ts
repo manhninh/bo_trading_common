@@ -1,5 +1,6 @@
 import {pbkdf2Sync, randomBytes} from 'crypto';
 import mongoose, {Schema} from 'mongoose';
+import aggregatePaginate from 'mongoose-aggregate-paginate-v2';
 import IUserModel from '../models/users/IUserModel';
 
 class UserSchema {
@@ -51,6 +52,8 @@ class UserSchema {
     schema.methods.checkPassword = function (this: IUserModel, password: string) {
       return this.encryptPassword(password) === this.hashed_password;
     };
+
+    schema.plugin(aggregatePaginate);
 
     /** return */
     return schema;
