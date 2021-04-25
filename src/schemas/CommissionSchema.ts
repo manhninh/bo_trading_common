@@ -1,5 +1,5 @@
 import mongoose, {Schema} from 'mongoose';
-import mongoosePaginate from 'mongoose-paginate';
+import aggregatePaginate from 'mongoose-aggregate-paginate-v2';
 import ICommissionModel from '../models/commissions/ICommissionModel';
 
 class CommissionSchema {
@@ -22,7 +22,7 @@ class CommissionSchema {
     );
 
     //
-    schema.plugin(mongoosePaginate);
+    schema.plugin(aggregatePaginate);
     return schema;
   }
 }

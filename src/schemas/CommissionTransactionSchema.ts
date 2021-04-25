@@ -1,5 +1,5 @@
 import mongoose, {Schema} from 'mongoose';
-import mongoosePaginate from 'mongoose-paginate';
+import aggregatePaginate from 'mongoose-aggregate-paginate-v2';
 import ICommissionTransactionModel from '../models/commissionTransactions/ICommissionTransactionModel';
 
 class CommissionTransactionSchema {
@@ -17,9 +17,12 @@ class CommissionTransactionSchema {
     );
 
     //
-    schema.plugin(mongoosePaginate);
+    schema.plugin(aggregatePaginate);
     return schema;
   }
 }
 
-export default mongoose.model<ICommissionTransactionModel>('commission_transactions', CommissionTransactionSchema.schema);
+export default mongoose.model<ICommissionTransactionModel>(
+  'commission_transactions',
+  CommissionTransactionSchema.schema,
+);
