@@ -1,5 +1,5 @@
 import mongoose, {Schema} from 'mongoose';
-import aggregatePaginate from 'mongoose-aggregate-paginate-v2';
+import aggregatePaginate from 'mongoose-aggregate-paginate';
 import mongoosePaginate from 'mongoose-paginate';
 import ITradeHistoryModel from '../models/tradeHistories/ITradeHistoryModel';
 
@@ -24,8 +24,8 @@ class TradeHistorySchema {
       },
     );
 
-    schema.plugin(mongoosePaginate);
     schema.plugin(aggregatePaginate);
+    schema.plugin(mongoosePaginate);
     return schema;
   }
 }
