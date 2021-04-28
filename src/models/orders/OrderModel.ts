@@ -27,6 +27,10 @@ export default class OrderModelModel {
     return this._orderModelModel.type_user;
   }
 
+  get prev_total_amount(): number {
+    return this._orderModelModel.prev_total_amount;
+  }
+
   get status(): boolean {
     return this._orderModelModel.status;
   }

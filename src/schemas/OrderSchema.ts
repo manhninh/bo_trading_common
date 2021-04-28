@@ -12,6 +12,8 @@ class OrderSchema {
         amount_order: {type: Schema.Types.Number, required: true},
         // 0: Real - 1: Demo - 2: Expert - 3: User Copy
         type_user: {type: Schema.Types.Number},
+        // số tiền của tài khoản trước khi vào lệnh, phục vụ tìm lại lịch sử nếu lỗi
+        prev_total_amount: {type: Schema.Types.Number},
         /** 0: inprocess - 1: done */
         status: {type: Schema.Types.Boolean, required: true},
       },
