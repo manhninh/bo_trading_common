@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 export default interface IUserModel extends mongoose.Document {
   full_name?: string;
-  avatar?:string;
+  avatar?: string;
   username: string;
   email: string;
   salt: string;
@@ -15,6 +15,7 @@ export default interface IUserModel extends mongoose.Document {
   ref_code?: string;
   verify_code?: string;
   is_sponsor: boolean;
+  is_expert: boolean;
   status: number;
   /** private variable */
   _plain_password: string;

@@ -63,6 +63,10 @@ export default class UserModel {
     return this._userModel.is_sponsor;
   }
 
+  get is_expert(): boolean {
+    return this._userModel.is_expert;
+  }
+
   get status(): number {
     return this._userModel.status;
   }
