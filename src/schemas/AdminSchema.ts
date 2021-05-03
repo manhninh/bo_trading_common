@@ -1,6 +1,5 @@
 import {pbkdf2Sync, randomBytes} from 'crypto';
 import mongoose, {Schema} from 'mongoose';
-import aggregatePaginate from 'mongoose-aggregate-paginate';
 import IAdminModel from '../models/admins/IAdminModel';
 
 class AdminSchema {
@@ -11,6 +10,7 @@ class AdminSchema {
         salt: {type: Schema.Types.String, required: true},
         hashed_password: {type: Schema.Types.String, required: true},
         tfa: {type: Schema.Types.String},
+        code: {type: Schema.Types.String},
       },
       {
         timestamps: true,
