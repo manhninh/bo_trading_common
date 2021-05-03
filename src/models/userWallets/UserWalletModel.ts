@@ -42,4 +42,8 @@ export default class UserWalletModel {
   get enable_withdraw(): boolean {
     return this._userWalletModel.enable_withdraw;
   }
+
+  get amount_wallet(): number {
+    return this._userWalletModel.amount_wallet;
+  }
 }
