@@ -14,6 +14,7 @@ class UserWalletSchema {
         trc20: { type: Schema.Types.String, default: null },
         erc20: { type: Schema.Types.String, default: null },
         enable_withdraw: { type: Schema.Types.Boolean, default: true },
+        amount_wallet: { type: Schema.Types.Number, default: 0 },
       },
       {
         timestamps: true,
