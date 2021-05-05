@@ -1,15 +1,16 @@
 import mongoose, {Schema} from 'mongoose';
-import IAdminModel from '../models/admins/IAdminModel';
+import IProtectLogModel from '../models/protectLogs/IProtectLogModel';
 
-class AdminSchema {
+class ProtectLogSchema {
   static get schema() {
     const schema = new mongoose.Schema(
       {
-        email: {type: Schema.Types.String, index: true, required: true, unique: true},
-        salt: {type: Schema.Types.String, required: true},
-        hashed_password: {type: Schema.Types.String, required: true},
-        tfa: {type: Schema.Types.String},
-        code: {type: Schema.Types.String},
+        // 0: thủ công - 1: tự động
+        type: {type: Schema.Types.Number},
+        // mức chênh lệch nữa buy/sell
+        diff: {type: Schema.Types.Number},
+        // mức can thiệp bảo vệ sàn: 0: thủ công - 1: tự động mức 1 - 2: tự động mức 2 - 3: Tự động mức 3 - 4: Tự động mức 4
+        level:{type: Schema.Types.Number}
       },
       {
         timestamps: true,
@@ -21,4 +22,4 @@ class AdminSchema {
   }
 }
 
-export default mongoose.model<IAdminModel>('protect_logs', AdminSchema.schema);
+export default mongoose.model<IProtectLogModel>('protect_logs', ProtectLogSchema.schema);
