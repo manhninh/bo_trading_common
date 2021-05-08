@@ -13,6 +13,7 @@ import UserWalletSchema from './UserWalletSchema';
 import CommissionSchema from './CommissionSchema';
 import CommissionTransactionSchema from './CommissionTransactionSchema';
 import AdminSchema from "./AdminSchema";
+import ProtectLogSchema from "./ProtectLogSchema";
 
 export {
   AccessTokenSchema,
@@ -29,5 +30,6 @@ export {
   QueueLogSchema,
   CommissionSchema,
   CommissionTransactionSchema,
-  AdminSchema
+  AdminSchema,
+  ProtectLogSchema
 };
