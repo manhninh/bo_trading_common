@@ -16,6 +16,8 @@ class UserTransactionsSchema {
         status: { type: Schema.Types.Number, default: Constants.TRANSACTION_STATUS_PENDING }, // 0: Pending, 1: Active, 2: Cancelled,
         type: { type: Schema.Types.Number, default: Constants.TRANSACTION_TYPE_DEPOSIT }, // 0: Deposit, 1: Transfer, 2: Withdraw, 3: Buy Sponsor
         noted: { type: Schema.Types.String, default: '' }, // Noted if Withdraw reject by Admin, insufficient tokens
+        from_wallet: { type: Schema.Types.String, default: 'SPOT' },
+        to_wallet: { type: Schema.Types.String, default: '' },
       },
       {
         timestamps: true,
