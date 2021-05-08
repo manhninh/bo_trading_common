@@ -46,12 +46,4 @@ export default class UserWalletModel {
   get amount_wallet(): number {
     return this._userWalletModel.amount_wallet;
   }
-
-  get from_wallet(): string {
-    return this._userWalletModel.from_wallet;
-  }
-
-  get to_wallet(): string {
-    return this._userWalletModel.to_wallet;
-  }
 }

@@ -46,4 +46,12 @@ export default class UserTransactionsModel {
   get fee(): number {
     return this._userTransactionsModel.fee;
   }
+
+  get from_wallet(): string {
+    return this._userTransactionsModel.from_wallet;
+  }
+
+  get to_wallet(): string {
+    return this._userTransactionsModel.to_wallet;
+  }
 }

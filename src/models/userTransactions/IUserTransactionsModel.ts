@@ -11,4 +11,6 @@ export default interface IUserTransactionsModel extends mongoose.Document {
   status: number; // 0: Pending, 1: Active, 2: Cancelled, 
   type: number; // 0: Deposit, 1: Transfer, 2: Withdraw
   noted: string;
+  from_wallet?: string;
+  to_wallet?: string;
 }
