@@ -14,6 +14,7 @@ import CommissionSchema from './CommissionSchema';
 import CommissionTransactionSchema from './CommissionTransactionSchema';
 import AdminSchema from "./AdminSchema";
 import ProtectLogSchema from "./ProtectLogSchema";
+import LastResultSchema from "./LastResultSchema";
 
 export {
   AccessTokenSchema,
@@ -31,5 +32,6 @@ export {
   CommissionSchema,
   CommissionTransactionSchema,
   AdminSchema,
-  ProtectLogSchema
+  ProtectLogSchema,
+  LastResultSchema
 };
