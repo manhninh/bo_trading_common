@@ -46,4 +46,12 @@ export default class UserWalletModel {
   get amount_wallet(): number {
     return this._userWalletModel.amount_wallet;
   }
+
+  get amount_trc20_wallet(): number {
+    return this._userWalletModel.amount_trc20_wallet;
+  }
+
+  get amount_erc20_wallet(): number {
+    return this._userWalletModel.amount_erc20_wallet;
+  }
 }

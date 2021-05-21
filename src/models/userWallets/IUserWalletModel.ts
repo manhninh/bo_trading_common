@@ -11,4 +11,6 @@ export default interface IUserWalletModel extends mongoose.Document {
   erc20?: string;
   enable_withdraw?: boolean;
   amount_wallet?: number;
+  amount_trc20_wallet?: number;
+  amount_erc20_wallet?: number;
 }
