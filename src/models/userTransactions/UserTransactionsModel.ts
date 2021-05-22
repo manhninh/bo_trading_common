@@ -35,6 +35,10 @@ export default class UserTransactionsModel {
     return this._userTransactionsModel.status;
   }
 
+  get system_status(): number {
+    return this._userTransactionsModel.status;
+  }
+
   get type(): number {
     return this._userTransactionsModel.type;
   }

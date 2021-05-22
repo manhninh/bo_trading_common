@@ -18,6 +18,7 @@ class UserTransactionsSchema {
         noted: { type: Schema.Types.String, default: '' }, // Noted if Withdraw reject by Admin, insufficient tokens
         from_wallet: { type: Schema.Types.String, default: 'SPOT' },
         to_wallet: { type: Schema.Types.String, default: '' },
+        system_status: { type: Schema.Types.Number, default: Constants.TRANSACTION_STATUS_PENDING },
       },
       {
         timestamps: true,
